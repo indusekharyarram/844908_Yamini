@@ -11,6 +11,7 @@ public class search {
 	By Password=By.name("password");
 	By Login=By.name("DoLogin");
 	By TaskList=By.xpath("/html/body/table[1]/tbody/tr[2]/td[1]/a/img");
+	//To do login and open taskmanager website 
 	public void Login()
 	{
 		System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
@@ -22,16 +23,20 @@ public class search {
 		driver.findElement(Password).sendKeys("admin");
 		driver.findElement(Login).click();
 	}
+	//click the task list
 	public void Click()
 	{
 		driver.findElement(TaskList).click();
 	}
+	//To do assign to alex kniel 
 	public void Assign()
 	{
 		driver.findElement(By.xpath("/html/body/table[2]/tbody/tr/td/form/table[2]/tbody/tr[1]/td/select/option[4]")).click();
 	}
+	//To do search 
 	public void Search()
 	{
-		driver.findElement(By.xpath("/html/body/table[2]/tbody/tr/td/form/table[2]/tbody/tr[6]/td/input")).click();
+	driver.findElement(By.xpath("/html/body/table[2]/tbody/tr/td/form/table[2]/tbody/tr[6]/td/input")).click();
+	driver.close();
 	}
 }

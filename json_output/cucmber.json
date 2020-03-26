@@ -1,0 +1,386 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 5,
+        "name": "To  check that the application i taking  the valid credentials.",
+        "description": "",
+        "id": "http://examples.codecharge.com/taskmanager/default.php;to--check-that-the-application-i-taking--the-valid-credentials.",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10764394242,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "launch the browser",
+            "match": {
+              "location": "a_login.launch_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4737435716,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "open the application",
+            "match": {
+              "location": "a_login.open_the_application()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 6177636957,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "enter username \u0026 password",
+            "match": {
+              "location": "a_login.enter_username_password()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2416046518,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "click on login button",
+            "match": {
+              "location": "a_login.click_on_login_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 4,
+            "name": "@tc01_login"
+          }
+        ]
+      },
+      {
+        "line": 13,
+        "name": "To check  that the application  Open the Tasklist in the taskmanager website",
+        "description": "",
+        "id": "http://examples.codecharge.com/taskmanager/default.php;to-check--that-the-application--open-the-tasklist-in-the-taskmanager-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 13092941469,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "Login to the application",
+            "match": {
+              "location": "b_search.login_to_the_application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 805471400,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "click on tasklist",
+            "match": {
+              "location": "b_search.click_on_tasklist()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 71696204,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "Select Assined to as Alex kniel",
+            "match": {
+              "location": "b_search.select_Assined_to_as_Alex_kniel()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2863102102,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "click on search  button",
+            "match": {
+              "location": "b_search.click_on_search_button()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 12,
+            "name": "@tc02_Tasklist"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "To check the application add Task in examples.codecharge.com/TaskManager/Default.php",
+        "description": "",
+        "id": "http://examples.codecharge.com/taskmanager/default.php;to-check-the-application-add-task-in-examples.codecharge.com/taskmanager/default.php",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 10802938680,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "open the Application",
+            "match": {
+              "location": "c_addTask.open_the_Application()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4124349613,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "click on Administration",
+            "match": {
+              "location": "c_addTask.click_on_Administration()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4073546689,
+              "status": "passed"
+            },
+            "line": 23,
+            "name": "login with valid credentials",
+            "match": {
+              "location": "c_addTask.login_with_valid_credentials()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5056114089,
+              "status": "passed"
+            },
+            "line": 24,
+            "name": "click on add task",
+            "match": {
+              "location": "c_addTask.click_on_add_task()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 667767499,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "enter all fields",
+            "match": {
+              "location": "c_addTask.enter_all_fields()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 4643053706,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "select Start Date",
+            "match": {
+              "location": "c_addTask.select_Start_Date()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1423331937,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "select End Date",
+            "match": {
+              "location": "c_addTask.select_End_Date()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1552714992,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "click on Add button",
+            "match": {
+              "location": "c_addTask.click_on_Add_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "line": 19,
+            "name": "@tc03_AddTask"
+          }
+        ]
+      },
+      {
+        "line": 31,
+        "name": "To check the applicationPrint the  task in the TaskManager website",
+        "description": "",
+        "id": "http://examples.codecharge.com/taskmanager/default.php;to-check-the-applicationprint-the--task-in-the-taskmanager-website",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 3715455087,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Open the browser",
+            "match": {
+              "location": "d_Screenshot.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 4028911649,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "Access TaskManager website",
+            "match": {
+              "location": "d_Screenshot.access_TaskManager_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 830433937,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "open the task list",
+            "match": {
+              "location": "d_Screenshot.open_the_task_list()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 784979007,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "print the tasks list",
+            "match": {
+              "location": "d_Screenshot.print_the_tasks_list()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 30,
+            "name": "@tc04_Print"
+          }
+        ]
+      },
+      {
+        "line": 38,
+        "name": "To check that the application is logout from the task manager  application",
+        "description": "",
+        "id": "http://examples.codecharge.com/taskmanager/default.php;to-check-that-the-application-is-logout-from-the-task-manager--application",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4600216624,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "open the browser",
+            "match": {
+              "location": "e_logout.open_the_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 2660107757,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "access Taskmanager website",
+            "match": {
+              "location": "e_logout.access_Taskmanager_website()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3748105743,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "click the administration",
+            "match": {
+              "location": "e_logout.click_the_administration()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3116378941,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "click the logout",
+            "match": {
+              "location": "e_logout.click_the_logout()"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "line": 37,
+            "name": "@tc05_Logout"
+          }
+        ]
+      }
+    ],
+    "name": "http://examples.codecharge.com/TaskManager/Default.php",
+    "description": "",
+    "id": "http://examples.codecharge.com/taskmanager/default.php",
+    "keyword": "Feature",
+    "uri": "feature/testcase.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Taskmanager_Feature"
+      }
+    ]
+  }
+]

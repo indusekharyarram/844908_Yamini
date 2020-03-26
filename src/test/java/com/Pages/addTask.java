@@ -14,6 +14,7 @@ public class addTask {
 	By Password=By.name("password");
 	By Login=By.name("DoLogin");
 	By TaskList=By.xpath("/html/body/table[1]/tbody/tr[2]/td[1]/a/img");
+	// To open the browser and taskmanager website
 	public void Open()
 	{
 		System.setProperty("webdriver.chrome.driver", "driver\\chromedriver.exe");
@@ -21,10 +22,12 @@ public class addTask {
 		driver.manage().window().maximize();
 		driver.get("http://examples.codecharge.com/TaskManager/Default.php");
 	}
+	//To  click the click button 
 	public void Click()
 	{
 		driver.findElement(Administration).click();
 	}
+	//To do login  and click on tasklist
 	public void Login()
 	{
 		driver.findElement(Username).sendKeys("admin");
@@ -34,10 +37,12 @@ public class addTask {
 		driver.findElement(By.xpath("/html/body/table[2]/tbody/tr/td/form/table[2]/tbody/tr[1]/td/select/option[4]")).click();
 		driver.findElement(By.xpath("/html/body/table[2]/tbody/tr/td/form/table[2]/tbody/tr[6]/td/input")).click();
 	}
+	// To click add
 	public void Add()
 	{
 		driver.findElement(By.xpath("/html/body/table[3]/tbody/tr/td/table[2]/tbody/tr[3]/td[1]/a")).click();
 	}
+	//To enter the add details
 	public void Enter()
 	{
 		driver.findElement(By.xpath("//input[@name='task_name']")).sendKeys("CTS");
@@ -48,6 +53,7 @@ public class addTask {
 	    driver.findElement(By.xpath("(//option[@value='1'])[4]")).click();
 	    driver.findElement(By.xpath("(//option[@value='30'])")).click();
 	}
+	//To enter StartDate
 	public void Startdate()
 	{
 		Actions action=new Actions(driver);
@@ -67,6 +73,7 @@ public class addTask {
 		actions.moveToElement(driver.findElement(By.xpath("/html/body/center/table/tbody/tr/td/table/tbody/tr[4]/td[3]/a"))).click().build().perform();
 		driver.switchTo().window(parent);
 	}
+	//To enter Enddate
 	public void Enddate()
 	{
 		Actions action=new Actions(driver);
@@ -86,8 +93,10 @@ public class addTask {
 		actions.moveToElement(driver.findElement(By.xpath("/html/body/center/table/tbody/tr/td/table/tbody/tr[5]/td[6]/a"))).click().build().perform();
 		driver.switchTo().window(parent);
 	}
+	//To click AddButton
 	public void AddButton()
 	{
 		driver.findElement(By.xpath("//input[@name='Insert']")).click();
+		driver.close();
 	}
 }
