@@ -1,0 +1,41 @@
+@Taskmanager_Feature
+Feature: http://examples.codecharge.com/TaskManager/Default.php
+
+  @tc01_login
+  Scenario: To  check that the application i taking  the valid credentials. # feature/testcase.feature:5
+    Given launch the browser                                                # a_login.launch_the_browser()
+    When open the application                                               # a_login.open_the_application()
+    Then enter username & password                                          # a_login.enter_username_password()
+    And click on login button                                               # a_login.click_on_login_button()
+
+  @tc02_Tasklist
+  Scenario: To check  that the application  Open the Tasklist in the taskmanager website # feature/testcase.feature:13
+    Given Login to the application                                                       # b_search.login_to_the_application()
+    When click on tasklist                                                               # b_search.click_on_tasklist()
+    Then Select Assined to as Alex kniel                                                 # b_search.select_Assined_to_as_Alex_kniel()
+    And click on search  button                                                          # b_search.click_on_search_button()
+
+  @tc03_AddTask
+  Scenario: To check the application add Task in examples.codecharge.com/TaskManager/Default.php # feature/testcase.feature:20
+    Given open the Application                                                                   # c_addTask.open_the_Application()
+    When click on Administration                                                                 # c_addTask.click_on_Administration()
+    When login with valid credentials                                                            # c_addTask.login_with_valid_credentials()
+    When click on add task                                                                       # c_addTask.click_on_add_task()
+    When enter all fields                                                                        # c_addTask.enter_all_fields()
+    When select Start Date                                                                       # c_addTask.select_Start_Date()
+    When select End Date                                                                         # c_addTask.select_End_Date()
+    Then click on Add button                                                                     # c_addTask.click_on_Add_button()
+
+  @tc04_Print
+  Scenario: To check the applicationPrint the  task in the TaskManager website # feature/testcase.feature:31
+    Given Open the browser                                                     # d_Screenshot.open_the_browser()
+    When Access TaskManager website                                            # d_Screenshot.access_TaskManager_website()
+    Then open the task list                                                    # d_Screenshot.open_the_task_list()
+    And print the tasks list                                                   # d_Screenshot.print_the_tasks_list()
+
+  @tc05_Logout
+  Scenario: To check that the application is logout from the task manager  application # feature/testcase.feature:38
+    Given open the browser                                                             # e_logout.open_the_browser()
+    When access Taskmanager website                                                    # e_logout.access_Taskmanager_website()
+    Then click the administration                                                      # e_logout.click_the_administration()
+    And click the logout                                                               # e_logout.click_the_logout()

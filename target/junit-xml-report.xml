@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="191.037603">
+    <testcase classname="http://examples.codecharge.com/TaskManager/Default.php" name="To  check that the application i taking  the valid credentials." time="81.125773">
+        <system-out>
+            <![CDATA[Given launch the browser....................................................passed
+When open the application...................................................passed
+Then enter username & password..............................................passed
+And click on login button...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="http://examples.codecharge.com/TaskManager/Default.php" name="To check  that the application  Open the Tasklist in the taskmanager website" time="32.684732">
+        <system-out>
+            <![CDATA[Given Login to the application..............................................passed
+When click on tasklist......................................................passed
+Then Select Assined to as Alex kniel........................................passed
+And click on search  button.................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="http://examples.codecharge.com/TaskManager/Default.php" name="To check the application add Task in examples.codecharge.com/TaskManager/Default.php" time="50.351842">
+        <system-out>
+            <![CDATA[Given open the Application..................................................passed
+When click on Administration................................................passed
+When login with valid credentials...........................................passed
+When click on add task......................................................passed
+When enter all fields.......................................................passed
+When select Start Date......................................................passed
+When select End Date........................................................passed
+Then click on Add button....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="http://examples.codecharge.com/TaskManager/Default.php" name="To check the applicationPrint the  task in the TaskManager website" time="13.971207">
+        <system-out>
+            <![CDATA[Given Open the browser......................................................passed
+When Access TaskManager website.............................................passed
+Then open the task list.....................................................passed
+And print the tasks list....................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="http://examples.codecharge.com/TaskManager/Default.php" name="To check that the application is logout from the task manager  application" time="12.904049">
+        <system-out>
+            <![CDATA[Given open the browser......................................................passed
+When access Taskmanager website.............................................passed
+Then click the administration...............................................passed
+And click the logout........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
