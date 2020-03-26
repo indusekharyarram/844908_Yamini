@@ -9,7 +9,7 @@ import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 public class ExcelData {
 	public String Username(int a) throws InterruptedException, IOException
 	{
-		FileInputStream file=new FileInputStream(new File("C:\\Users\\Personal\\Downloads\\844908\\Excell"));
+		FileInputStream file=new FileInputStream(new File("Excel\\Exceldata.xlsx"));
 		XSSFWorkbook workbook=new XSSFWorkbook(file);
 		XSSFSheet sheet=workbook.getSheetAt(0);
 	    String un=sheet.getRow(a).getCell(0).getStringCellValue();
@@ -19,7 +19,7 @@ public class ExcelData {
 
 		public String Password(int b) throws InterruptedException, IOException
 	{
-			FileInputStream file=new FileInputStream(new File("C:\\Users\\Personal\\Downloads\\844908\\Excel"));
+			FileInputStream file=new FileInputStream(new File("Excel\\Exceldata.xlsx"));
 			XSSFWorkbook workbook=new XSSFWorkbook(file);
 			XSSFSheet sheet=workbook.getSheetAt(0);
 		    String pwd=sheet.getRow(b).getCell(1).getStringCellValue();

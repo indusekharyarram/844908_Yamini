@@ -22,7 +22,7 @@ public class login {
 	}
 		else if (browser.equalsIgnoreCase("firefox"))
 		{
-			System.setProperty("webdriver.gecko.driver","");
+			System.setProperty("webdriver.gecko.driver","driver\\geckodriver.exe");
 			driver=new FirefoxDriver();
 			driver.manage().window().maximize();
 		}
